@@ -1,0 +1,760 @@
+/* Tema principal: Rosa + Morado + Negro */
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0a0212, #12051c, #1a0827);
+  font-family: "Orbitron", "Poppins", sans-serif;
+  color: #fdf0ff;
+  min-height: 100vh;
+}
+/* 🎮 Encabezado principal gamer */
+.app-header {
+  background: linear-gradient(90deg, #0a0012, #2a004f);
+  color: #fff;
+  padding: 25px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 25px #ff00ff44;
+  border-bottom: 2px solid #ff00ff55;
+}
+.stats-button-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* 💜 Contenedor del título */
+.app-header .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+/* 🎮 Imagen animada del logo */
+.logo img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ff00ff;
+  box-shadow: 0 0 15px #ff00ff, 0 0 30px #b000ff, 0 0 60px #ff66cc;
+  animation: pulseGlow 2.5s infinite ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🌈 Efecto hover para el logo */
+.logo img:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 0 25px #ff33ff, 0 0 60px #b000ff, 0 0 100px #ff99ff;
+}
+
+/* ✨ Animación de brillo pulsante */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 8px #ff00ff, 0 0 20px #b000ff;
+  }
+  50% {
+    box-shadow: 0 0 20px #ff00ff, 0 0 50px #b000ff, 0 0 90px #ff66cc;
+  }
+  100% {
+    box-shadow: 0 0 10px #ff00ff, 0 0 30px #b000ff;
+  }
+}
+
+
+.app-header h1 {
+  font-size: 1.8rem;
+  background: linear-gradient(90deg, #ff00ff, #b000ff, #ff66cc);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  letter-spacing: 1px;
+  text-shadow: 0 0 12px #ff00ff88;
+  animation: glowPulse 2s infinite alternate;
+}
+
+@keyframes glowPulse {
+  from { text-shadow: 0 0 8px #ff00ff; }
+  to { text-shadow: 0 0 20px #ff00ff, 0 0 40px #b000ff; }
+}
+
+/* Subtítulo */
+.app-header p {
+  color: #d9a6ff;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+.nav-links {
+  display: flex;
+  gap: 12px;
+}
+
+/*  Botón Inicio */
+.app-header nav .btn-ghost {
+  background: transparent;
+  border: 2px solid #ff00ff;
+  color: #ffb3ff;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.app-header nav .btn-ghost:hover {
+  background: #ff00ff;
+  color: #fff;
+  box-shadow: 0 0 20px #ff00ff;
+  transform: scale(1.05);
+}
+
+
+/* Contenedor principal */
+.biblioteca-container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título */
+.titulo-biblioteca {
+  font-size: 2.6rem;
+  text-align: center;
+  color: #ff4fd8;
+  text-shadow: 0 0 20px #ff00ff, 0 0 40px #a800ff;
+  margin-bottom: 35px;
+}
+
+/*Contenido principal */
+.contenido-biblioteca {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* 🧾 Panel izquierdo */
+.col-formulario {
+  flex: 1;
+  background: rgba(25, 5, 35, 0.8);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 0 20px #ff00ff55;
+  border: 1px solid #ff00ff33;
+}
+
+/* 🕹️ Panel derecho (juegos) */
+.col-juegos {
+  flex: 3;
+  background: rgba(18, 0, 25, 0.85);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 0 25px #a800ff55;
+  border: 1px solid #8000ff33;
+}
+
+.subtitulo {
+  color: #ff8fff;
+  text-shadow: 0 0 15px #ff33ff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Tarjetas de juegos */
+.grid-juegos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+/* 🎮 Contenedor general */
+.grid-juegos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+/* 🕹️ Tarjeta individual */
+.carta-juego {
+  background: linear-gradient(180deg, #14001f, #1a002a 60%, #24003a);
+  border: 2px solid #ff00ff55;
+  border-radius: 18px;
+  width: 260px;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 15px #b300ff44;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carta-juego:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px #ff00ff, 0 0 45px #ff33cc;
+}
+
+/* 🎮 Imagen del juego */
+.carta-juego img {
+  width: 90%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-top: 10px;
+  box-shadow: 0 0 12px #ff00ff66;
+  transition: all 0.3s ease;
+}
+
+.carta-juego img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px #ff00ffaa, 0 0 40px #b000ff;
+}
+
+/* 🎮 Título */
+.carta-juego h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+  color: #fff;
+  text-shadow: 0 0 6px #ff66ff;
+}
+
+/* Texto secundario */
+.carta-juego .small {
+  color: #d4aaff;
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+
+/*Botones */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+/* Botón principal */
+.btn {
+  background: linear-gradient(90deg, #ff00ff, #b300ff);
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #ff55ff, #d000ff);
+  box-shadow: 0 0 10px #ff00ff, 0 0 20px #b000ff;
+  transform: scale(1.05);
+}
+
+
+
+.btn-ghost {
+  color: #fff;
+  border: 1px solid #d946ef;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-ghost:hover {
+  background: #d946ef;
+  color: white;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #ff00c8, #6f00ff);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+.btn {
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+
+/* ✨ Animación sutil de resplandor */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 10px #ff00ff55;
+  }
+  50% {
+    box-shadow: 0 0 25px #ff00ff99, 0 0 50px #b000ff55;
+  }
+  100% {
+    box-shadow: 0 0 10px #ff00ff55;
+  }
+}
+
+.carta-juego {
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+
+
+/* Inputs y botones */
+.input {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #1a0d22;
+  color: #fff;
+  border: 1px solid #ff00ff55;
+}
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #ff33ff77;
+}
+
+.dashboard-container {
+  padding: 24px;
+  color: white;
+  background: radial-gradient(circle at top left, #0a0015, #1a002b);
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-container h1 {
+  text-align: center;
+  color: #a855f7;
+  margin-bottom: 8px;
+  
+}
+.dashboard-container p{
+   text-align: center;
+   color: #ccc;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+/* 🔹 Tarjetas generales */
+.stat-card {
+  background: #1f1f2e;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Tarjetas más anchas */
+.stat-card.wide {
+  grid-column: 1 / -1;
+}
+
+/* 🔹 Contenedor de resumen */
+.summary-cards-horizontal-centered {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+  padding: 16px 0;
+}
+
+/* 🔹 Tarjetas de resumen */
+.summary-card-bright {
+  background: #2a2a40;
+  border-radius: 12px;
+  padding: 16px;
+  width: 180px;
+  text-align: center;
+  color: #fff;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.summary-card-bright:hover {
+  background: #3b3b5c;
+  transform: translateY(-4px);
+}
+
+/* 🔹 Barras de progreso */
+.summary-bar-bright {
+  height: 8px;
+  border-radius: 4px;
+  margin-top: 8px;
+  transition: width 0.4s ease;
+}
+
+.summary-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #a855f7;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.summary-icon:hover {
+  transform: scale(1.1);
+}
+
+
+/* Contenedor principal */
+.juego-detalle-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 30px;
+  background: radial-gradient(circle at top left, #1a001f, #0a0010);
+  color: #fff;
+  border-radius: 12px;
+}
+
+/* 📸 Información del juego */
+.juego-info {
+  flex: 1;
+  background: linear-gradient(180deg, #1b0020, #120013);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.2);
+  text-align: center;
+}
+
+.juego-info img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.4);
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.juego-info img:hover {
+  transform: scale(1.03);
+}
+
+.juego-info h2 {
+  color: #ff4de6;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.juego-info p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+/* 🎮 Checkbox gamer */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #ffb3ff;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.checkbox-label:hover {
+  color: #ff66ff;
+}
+
+/* 🔳 Oculta el checkbox original */
+.checkbox-label input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ff4de6;
+  border-radius: 6px;
+  background-color: #0d0013;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 0 5px rgba(255, 0, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* ✅ Efecto al hacer hover */
+.checkbox-label input[type="checkbox"]:hover {
+  box-shadow: 0 0 10px #ff4de6;
+  border-color: #ff99ff;
+}
+
+/* ✨ Efecto cuando está marcado */
+.checkbox-label input[type="checkbox"]:checked {
+  background: linear-gradient(90deg, #ff00aa, #9d00ff);
+  border-color: #ff99ff;
+  box-shadow: 0 0 15px #ff4de6, 0 0 5px #9d00ff;
+}
+
+/* 🟣 Checkmark (animación interna) */
+.checkbox-label input[type="checkbox"]::after {
+  content: "✔";
+  position: absolute;
+  top: 0;
+  left: 3px;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.2s ease;
+}
+
+.checkbox-label input[type="checkbox"]:checked::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* 📝 Formulario + reseñas */
+.juego-reseñas {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 📋 Formulario */
+.juego-reseñas form {
+  background: #1a001f;
+  border: 1px solid #ff4de6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255, 0, 255, 0.25);
+}
+
+.juego-reseñas form label {
+  display: block;
+  margin-top: 10px;
+  color: #ff99ff;
+  font-weight: 500;
+}
+
+.juego-reseñas form input,
+.juego-reseñas form select,
+.juego-reseñas form textarea {
+  width: 95%;
+  background: #120013;
+  border: 1px solid #ff4de6;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.juego-reseñas form button {
+  margin-top: 15px;
+  background: linear-gradient(90deg, #ff00aa, #9d00ff);
+  border: none;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.juego-reseñas form button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #ff4de6, #b84dff);
+}
+/* 💜 Checkbox alineado y estilo gamer */
+.checkbox-line-resena {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  color: #ffb3ff;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Caja del checkbox */
+.checkbox-line-resena input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ff4de6;
+  border-radius: 6px;
+  background-color: #0d0013;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(255, 0, 255, 0.25);
+}
+
+/* Hover efecto */
+.checkbox-line-resena input[type="checkbox"]:hover {
+  box-shadow: 0 0 10px #ff4de6;
+  border-color: #ff99ff;
+}
+
+/* Efecto activado */
+.checkbox-line-resena input[type="checkbox"]:checked {
+  background: linear-gradient(90deg, #ff00aa, #9d00ff);
+  box-shadow: 0 0 12px #ff4de6, 0 0 6px #9d00ff;
+  border-color: #ff99ff;
+}
+
+/* ✔️ animación del check */
+.checkbox-line-resena input[type="checkbox"]::after {
+  content: "✔";
+  position: absolute;
+  top: 0px;
+  left: 4px;
+  font-size: 13px;
+  color: white;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.25s ease;
+}
+
+.checkbox-line-resena input[type="checkbox"]:checked::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Etiqueta */
+.checkbox-line-resena label {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.checkbox-line-resena label:hover {
+  color: #ff66ff;
+}
+
+
+/* 🧾 Lista de reseñas */
+.list .card {
+  background: #120013;
+  border: 1px solid #ff00aa;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.list .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+}
+
+.list .card h4 {
+  color: #ff66ff;
+  margin-bottom: 5px;
+}
+
+.list .card .small {
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+.list .card .controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.list .card .btn {
+  background: transparent;
+  border: 1px solid #ff4de6;
+  color: #ff99ff;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.list .card .btn:hover {
+  background: #ff4de6;
+  color: #fff;
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  animation: fadeIn 0.4s ease;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+.toast.info {
+  background: linear-gradient(90deg, #7928CA, #FF0080);
+}
+
+.toast.warning {
+  background: linear-gradient(90deg, #ffb300, #ff4081);
+}
+
+.toast.error {
+  background: linear-gradient(90deg, #f44336, #9c27b0);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #ff00cc, #3333ff);
+  color: white;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-weight: 500;
+  box-shadow: 0 0 12px rgba(255, 0, 255, 0.5);
+  z-index: 1000;
+  animation: fadeInUp 0.4s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
