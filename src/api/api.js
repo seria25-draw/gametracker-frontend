@@ -4,7 +4,7 @@ const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL
 });
 
-// 🔹 API de juegos
+// API de juegos
 export const juegosAPI = {
   all: () => api.get('/juegos'),
   getById: (id) => api.get(`/juegos/${id}`), 
@@ -14,7 +14,7 @@ export const juegosAPI = {
 };
 
 
-// 🔹 API de reseñas
+// API de reseñas
 export const resenasAPI = {
   all: () => api.get('/resenas'),
   byJuego: (id) => api.get(`/resenas/juego/${id}`),
