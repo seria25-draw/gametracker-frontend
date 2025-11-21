@@ -698,6 +698,7 @@ body {
   color: #fff;
 }
 
+/*Sistema de Toasts / Notificaciones  */
 .toast {
   position: fixed;
   bottom: 20px;
@@ -722,7 +723,7 @@ body {
 .toast.error {
   background: linear-gradient(90deg, #f44336, #9c27b0);
 }
-
+ /* animaciones */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -742,6 +743,7 @@ body {
   animation: fadeInUp 0.4s ease;
 }
 
+/* animaciones */
 @keyframes fadeInUp {
   from {
     opacity: 0;
