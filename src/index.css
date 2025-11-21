@@ -422,8 +422,7 @@ body {
   transform: scale(1.1);
 }
 
-
-/* Contenedor principal */
+/*Contenedor principal detalles del juego */
 .juego-detalle-container {
   display: flex;
   justify-content: center;
@@ -444,7 +443,7 @@ body {
   box-shadow: 0 0 20px rgba(255, 0, 255, 0.2);
   text-align: center;
 }
-
+/* imgen del juego */
 .juego-info img {
   width: 100%;
   border-radius: 10px;
@@ -456,17 +455,18 @@ body {
 .juego-info img:hover {
   transform: scale(1.03);
 }
-
+/* titulo */
 .juego-info h2 {
   color: #ff4de6;
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
-
+/* parrafos */
 .juego-info p {
   color: #ccc;
   font-size: 0.95rem;
 }
+
 /* 🎮 Checkbox gamer */
 .checkbox-label {
   display: flex;
