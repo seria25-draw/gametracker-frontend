@@ -159,14 +159,14 @@ body {
   margin-bottom: 20px;
 }
 
-/* Tarjetas de juegos */
+/*Tarjetas de juegos*/
 .grid-juegos {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
-/* 🎮 Contenedor general */
+/*Contenedor general */
 .grid-juegos {
   display: flex;
   flex-wrap: wrap;
@@ -174,8 +174,7 @@ body {
   gap: 25px;
   margin-top: 25px;
 }
-
-/* 🕹️ Tarjeta individual */
+/*Tarjeta individual */
 .carta-juego {
   background: linear-gradient(180deg, #14001f, #1a002a 60%, #24003a);
   border: 2px solid #ff00ff55;
@@ -196,8 +195,7 @@ body {
   transform: translateY(-6px);
   box-shadow: 0 0 25px #ff00ff, 0 0 45px #ff33cc;
 }
-
-/* 🎮 Imagen del juego */
+/*Imagen del juego */
 .carta-juego img {
   width: 90%;
   height: 300px;
@@ -213,7 +211,7 @@ body {
   box-shadow: 0 0 25px #ff00ffaa, 0 0 40px #b000ff;
 }
 
-/* 🎮 Título */
+/*Título */
 .carta-juego h3 {
   font-size: 1.1rem;
   margin: 10px 0 5px;
@@ -221,7 +219,7 @@ body {
   text-shadow: 0 0 6px #ff66ff;
 }
 
-/* Texto secundario */
+/*Texto secundario */
 .carta-juego .small {
   color: #d4aaff;
   font-size: 0.85rem;
