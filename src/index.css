@@ -529,7 +529,6 @@ body {
   transform: scale(1);
 }
 
-
 /*Formulario + reseñas */
 .juego-reseñas {
   flex: 1;
@@ -538,7 +537,7 @@ body {
   gap: 20px;
 }
 
-/* 📋 Formulario */
+/*Formulario */
 .juego-reseñas form {
   background: #1a001f;
   border: 1px solid #ff4de6;
@@ -583,7 +582,8 @@ body {
   transform: scale(1.05);
   background: linear-gradient(90deg, #ff4de6, #b84dff);
 }
-/* 💜 Checkbox alineado y estilo gamer */
+
+/*Checkbox alineado y estilo gamer */
 .checkbox-line-resena {
   display: flex;
   align-items: center;
@@ -596,7 +596,7 @@ body {
   font-size: 0.95rem;
 }
 
-/* Caja del checkbox */
+/*Caja del checkbox */
 .checkbox-line-resena input[type="checkbox"] {
   appearance: none;
   width: 20px;
@@ -610,7 +610,7 @@ body {
   box-shadow: 0 0 8px rgba(255, 0, 255, 0.25);
 }
 
-/* Hover efecto */
+/*Hover efecto */
 .checkbox-line-resena input[type="checkbox"]:hover {
   box-shadow: 0 0 10px #ff4de6;
   border-color: #ff99ff;
@@ -623,7 +623,7 @@ body {
   border-color: #ff99ff;
 }
 
-/* ✔️ animación del check */
+/*animación del check */
 .checkbox-line-resena input[type="checkbox"]::after {
   content: "✔";
   position: absolute;
@@ -651,8 +651,7 @@ body {
   color: #ff66ff;
 }
 
-
-/* 🧾 Lista de reseñas */
+/*Lista de reseñas */
 .list .card {
   background: #120013;
   border: 1px solid #ff00aa;
