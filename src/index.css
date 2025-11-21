@@ -324,6 +324,7 @@ body {
   box-shadow: 0 0 10px #ff33ff77;
 }
 
+/*Estilos del dashboard y estadisticas*/
 .dashboard-container {
   padding: 24px;
   color: white;
@@ -339,6 +340,7 @@ body {
   margin-bottom: 8px;
   
 }
+
 .dashboard-container p{
    text-align: center;
    color: #ccc;
@@ -351,7 +353,7 @@ body {
   margin-top: 32px;
 }
 
-/* 🔹 Tarjetas generales */
+/*Tarjetas generales */
 .stat-card {
   background: #1f1f2e;
   border-radius: 16px;
@@ -370,7 +372,7 @@ body {
   grid-column: 1 / -1;
 }
 
-/* 🔹 Contenedor de resumen */
+/*Contenedor de resumen */
 .summary-cards-horizontal-centered {
   display: flex;
   justify-content: center;
@@ -381,7 +383,7 @@ body {
   padding: 16px 0;
 }
 
-/* 🔹 Tarjetas de resumen */
+/*Tarjetas de resumen */
 .summary-card-bright {
   background: #2a2a40;
   border-radius: 12px;
@@ -397,7 +399,7 @@ body {
   transform: translateY(-4px);
 }
 
-/* 🔹 Barras de progreso */
+/*Barras de progreso */
 .summary-bar-bright {
   height: 8px;
   border-radius: 4px;
