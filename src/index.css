@@ -226,6 +226,10 @@ body {
   line-height: 1.3;
 }
 
+.carta-juego {
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
 /*Botones */
 .controls {
   display: flex;
@@ -235,7 +239,7 @@ body {
   margin: 15px 0;
 }
 
-/* Botón principal */
+/*Botón principal */
 .btn {
   background: linear-gradient(90deg, #ff00ff, #b300ff);
   border: none;
@@ -254,8 +258,6 @@ body {
   box-shadow: 0 0 10px #ff00ff, 0 0 20px #b000ff;
   transform: scale(1.05);
 }
-
-
 
 .btn-ghost {
   color: #fff;
@@ -293,8 +295,7 @@ body {
   transform: scale(1.05);
 }
 
-
-/* ✨ Animación sutil de resplandor */
+/*Animación sutil de resplandor */
 @keyframes glowPulse {
   0% {
     box-shadow: 0 0 10px #ff00ff55;
@@ -306,12 +307,6 @@ body {
     box-shadow: 0 0 10px #ff00ff55;
   }
 }
-
-.carta-juego {
-  animation: glowPulse 3s ease-in-out infinite;
-}
-
-
 
 /* Inputs y botones */
 .input {
