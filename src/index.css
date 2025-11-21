@@ -132,7 +132,7 @@ body {
   justify-content: space-between;
 }
 
-/* 🧾 Panel izquierdo */
+/* Panel izquierdo */
 .col-formulario {
   flex: 1;
   background: rgba(25, 5, 35, 0.8);
@@ -142,7 +142,7 @@ body {
   border: 1px solid #ff00ff33;
 }
 
-/* 🕹️ Panel derecho (juegos) */
+/*Panel derecho (juegos) */
 .col-juegos {
   flex: 3;
   background: rgba(18, 0, 25, 0.85);
