@@ -20,6 +20,7 @@ body {
 .stats-button-container {
   text-align: center;
   margin: 20px 0;
+
 }
 
 /* 💜 Contenedor del título */
@@ -441,7 +442,7 @@ body {
   border-radius: 12px;
 }
 
-/* 📸 Información del juego */
+/*Información del juego */
 .juego-info {
   flex: 1;
   background: linear-gradient(180deg, #1b0020, #120013);
