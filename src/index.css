@@ -1,4 +1,4 @@
-/* estilo globales */
+/*estilo globales */
 body {
   margin: 0;
   background: linear-gradient(135deg, #0a0212, #12051c, #1a0827);
@@ -6,7 +6,7 @@ body {
   color: #fdf0ff;
   min-height: 100vh;
 }
-/* 🎮 Encabezado principal gamer */
+/*Header, logo, animaciones y navegación*/
 .app-header {
   background: linear-gradient(90deg, #0a0012, #2a004f);
   color: #fff;
@@ -17,19 +17,13 @@ body {
   box-shadow: 0 0 25px #ff00ff44;
   border-bottom: 2px solid #ff00ff55;
 }
-.stats-button-container {
-  text-align: center;
-  margin: 20px 0;
-
-}
-
-/* 💜 Contenedor del título */
+/*Contenedor del título */
 .app-header .logo {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-/* 🎮 Imagen animada del logo */
+/*Imagen animada del logo */
 .logo img {
   width: 70px;
   height: 70px;
@@ -41,13 +35,13 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 🌈 Efecto hover para el logo */
+/*Efecto hover para el logo */
 .logo img:hover {
   transform: scale(1.1) rotate(5deg);
   box-shadow: 0 0 25px #ff33ff, 0 0 60px #b000ff, 0 0 100px #ff99ff;
 }
 
-/* ✨ Animación de brillo pulsante */
+/*Animación de brillo pulsante */
 @keyframes pulseGlow {
   0% {
     box-shadow: 0 0 8px #ff00ff, 0 0 20px #b000ff;
@@ -59,7 +53,6 @@ body {
     box-shadow: 0 0 10px #ff00ff, 0 0 30px #b000ff;
   }
 }
-
 
 .app-header h1 {
   font-size: 1.8rem;
@@ -108,6 +101,11 @@ body {
   transform: scale(1.05);
 }
 
+.stats-button-container {
+  text-align: center;
+  margin: 20px 0;
+
+}
 
 /* Contenedor principal */
 .biblioteca-container {
